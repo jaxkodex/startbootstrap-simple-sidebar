@@ -1,7 +1,40 @@
-.sidebar-nav ul a {
+.sidebar-nav > .sidebar-brand {
+  line-height: initial;
+}
+
+.sidebar-nav li {
+  text-indent: initial;
+  line-height: initial;
+  display: block;
+}
+
+.sidebar-nav li a {
     padding: 10px 20px;
     color: #aaa;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05) inset;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+li.sidebar-brand a {
+  border-top: none;
+  padding: 20px 0px 10px 20px;
+}
+
+.sidebar-nav li ul {
+  padding-left: 10px;
+}
+
+#top {
+  height: 43px;
+}
+
+#page-content-wrapper {
+  padding-top: 0px;
+}
+
+.dropdown > a {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 10px;
 }

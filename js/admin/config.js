@@ -31,15 +31,16 @@ require.config({
 	urlArgs : "bust=" + (new Date()).getTime()
 });
 
-require([ 'app', 'views/AppLayout', 'views/MenuView',
+require([ 'app', 'views/AppLayout', 'views/MenuView', 'views/TopView',
 'init', 'backbone', 'underscore', 'bootstrap', 'metis' ],
-function(app, AppLayout, MenuView, init, Backbone, _) {
+function(app, AppLayout, MenuView, TopView, init, Backbone, _) {
 	app.on('start', function() {
 		app.rootView = new AppLayout;
 
 		init.initialize();
 
 		app.rootView.showChildView('menu', new MenuView);
+		app.rootView.showChildView('top', new TopView);
 		Backbone.history.start();
 	});
 	app.start();
