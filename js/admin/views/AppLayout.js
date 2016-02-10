@@ -3,7 +3,8 @@ define(['marionette'], function (Marionette) {
     el: 'body',
     regions: {
       menu: '#menu',
-      main: '#main'
+      main: '#main',
+      top: '#top'
     }
   });
 })
